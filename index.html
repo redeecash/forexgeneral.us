@@ -58,8 +58,13 @@
         <p>by PRESSPAGE ENTERTAINMENT INC.</p>
       </div>
       <div class="bottomleft">
-        <p>&copy; 2017-<?php echo date('Y'); ?> PRESSPAGE ENTERTAINMENT INC dba REDEECASH. All rights reserved.</p>
+        <p>&copy; 2017<span id="year"></span> PRESSPAGE ENTERTAINMENT INC dba REDEECASH. All rights reserved.</p>
       </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("year").textContent = new Date().getFullYear();
+      });      
+    </script>
   </body>
 </html>
